@@ -27,10 +27,17 @@ function updateScreen2() {
 }
 
 function see() {
-  var messageName = document.getElementById("first_name").value;
-  var messageLastName = document.getElementById("last_name").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  let incorrect = document.getElementById("incorrect");
-  incorrect.innerText = "Invalid Login";
+  var messageName = localStorage.getItem("first_name");
+  var messageLastName = localStorage.getItem("last_name");
+  var email = localStorage.getItem("email");
+  var phone = localStorage.getItem("phone");
+  let message = document.getElementById("message");
+  message.innerText =
+    messageName +
+    " " +
+    messageLastName +
+    " wants to volunteer! Email: " +
+    email +
+    " Phone: " +
+    phone;
 }

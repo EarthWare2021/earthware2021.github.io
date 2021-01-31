@@ -5,7 +5,7 @@
       <div id="navbar">
           <ul>
             <li><img src="images/logo.png" height="40" /></li>
-            <li><a href="\index.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li>
               <a href="mission.html"><b>Our Mission</b></a>
             </li>
@@ -35,19 +35,19 @@
 
       <p>
         <label>First name</label><br />
-        <input type="text" name="first_name" />
+        <input type="text" id="first_name" />
       </p>
       <p>
         <label>Last name</label><br />
-        <input type="text" name="last_name" />
+        <input type="text" id="last_name" />
       </p>
       <p>
         <label>Email</label><br />
-        <input type="email" name="email" required />
+        <input type="email" id="email" required />
       </p>
       <p>
         <label>Phone number</label><br />
-        <input type="tel" name="phone" />
+        <input type="tel" id="phone" />
       </p>
       <p>
         <label>Country</label><br />
@@ -61,9 +61,22 @@
       </p>
 
       <p>
-        <a href="success.html"><button>Sign up</button></a>
+  <a onclick="submit()" href="success.html"><button type="button" >Sign up</button></a>
         <button type="reset">Reset form</button>
       </p>
     </form>
+    <script>
+      function submit(){
+      var messageName = document.getElementById("first_name").value;
+      var messageLastName = document.getElementById("last_name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      console.log("here");
+      localStorage.setItem("first_name", messageName);
+      localStorage.setItem("last_name", messageLastName);
+      localStorage.setItem("email", email);
+      localStorage.setItem("phone", phone);
+        }
+      </script>
   </body>
 </html>
