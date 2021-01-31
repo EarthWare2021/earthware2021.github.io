@@ -1,0 +1,24 @@
+.centered {
+  display: block;
+  margin: auto;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 115%;
+}
+.small-font {
+  font-size: 70%;
+}
+
+body {
+  background-color: rgb(67, 180, 171);
+  margin: 0px;
+}
+
+#main {
+  padding: 5% 5%;
+}
+.italic-text {
+  font-style: italic;
+}
