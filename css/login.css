@@ -1,0 +1,12 @@
+body {
+  background-color: grey;
+  margin: 0px;
+  text-align: center;
+}
+p {
+  font-size: 25px;
+}
+
+#invalid {
+  color: red;
+}

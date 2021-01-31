@@ -1,0 +1,35 @@
+/* .right {
+  display: block;
+  float: right;
+  margin: 50px;
+}
+.left {
+  display: block;
+  float: left;
+  margin: 50px;
+} */
+/* .items {
+  border-style: solid;
+  padding: 50px 0px 0px 0px; */
+}
+#container {
+  display: grid;
+  grid-template-rows: 500px 500px;
+  grid-template-columns: 500px 500px;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 115%;
+}
+.small-font {
+  font-size: 70%;
+}
+#main {
+  padding: 5% 5%;
+}
+body {
+  background-color: rgb(128, 255, 255);
+  text-align: center;
+  margin: 0px;
+}

@@ -1,0 +1,9 @@
+body {
+  background-color: darkseagreen;
+  text-align: center;
+  margin: 0px;
+}
+.centered {
+  display: block;
+  margin: auto;
+}

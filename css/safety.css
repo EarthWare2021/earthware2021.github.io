@@ -1,0 +1,10 @@
+body {
+  background-color: papayawhip;
+  margin: 0px;
+}
+#main {
+  padding: 5% 5%;
+}
+#center_txt {
+  text-align: center;
+}
