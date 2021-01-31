@@ -7,3 +7,6 @@ body {
   display: block;
   margin: auto;
 }
+.right {
+  margin-right: 150px;
+}

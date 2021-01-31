@@ -7,6 +7,8 @@ var myButton = document.getElementById("login");
 myButton.addEventListener("click", logIn);
 var myButton2 = document.getElementById("submit");
 myButton2.addEventListener("click", see);
+var myButton3 = document.getElementById("button3");
+myButton2.addEventListener("click", request);
 function logIn() {
   var ident = document.getElementById("user").value;
   var ident2 = document.getElementById("pass").value;
@@ -40,4 +42,11 @@ function see() {
     email +
     " Phone: " +
     phone;
+}
+
+function request() {
+  var messageName2 = localStorage.getItem("name2");
+  var text = localStorage.getItem("text");
+  let message = document.getElementById("request");
+  message.innerText = messageName2 + " says " + text;
 }
