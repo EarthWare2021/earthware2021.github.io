@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" href="css/navbar.css" />
-      <div id="navbar">
-          <ul>
-            <li><img src="images/logo.png" height="40" /></li>
-            <li><a href="/index.html">Home</a></li>
-            <li>
-              <a href="mission.html"><b>Our Mission</b></a>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a class="navbar" href="volunteer.html">Volunteer</a></li>
-            <li><a class="navbar" href="donate.html">Donate</a></li>
-            <li><a href="log_in.html">Log In</a></li>
-          </ul>
-        </div>
+    <div id="navbar">
+      <ul>
+        <li><img src="images/logo.png" height="40" /></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a class="navbar" href="volunteer.html"><b>Volunteer</b></a>
+        </li>
+        <li><a class="navbar" href="donate.html">Donate</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="log_in.html">Log In</a></li>
+      </ul>
+    </div>
+    <link rel="stylesheet" href="css/volunteer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -22,61 +24,77 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
     />
-    <link rel="stylesheet" href="css/form.css" />
     <style>
       body {
         font-family: "Montserrat", sans-serif;
       }
     </style>
-    <title>Earth Ware - Form</title>
+    <title>Earth Ware - Volunteer</title>
   </head>
   <body>
-    <p>Sign up here to participate!</p>
-
+    
+    <div id="main">
+      <h1>Want to Volunteer?</h1>
+    <p class = "italic-text">Click <a href="form.html">here</a> for the link to the sign up form!</p>
+    <br />
+    <h1 class="bold-text">How it works:</h1>
       <p>
-        <label>First name</label><br />
-        <input type="text" id="first_name" />
+        Once you sign up, we provide you with the training you need during a zoom
+        call with other volunteers around the globe. Using old clothing, you will
+        make a reusable mask!
       </p>
       <p>
-        <label>Last name</label><br />
-        <input type="text" id="last_name" />
+        When you have completed the sign up sheet on our Volunteer page, you will
+        be sent a zoom link via email. This zoom will take place during one of
+        your listed available times. If you have prior experience with making
+        homemade masks, the zoom training is not required, but it is an amazing
+        opportunity to connect with others who are passionate about the
+        environment-- just like you!
       </p>
       <p>
-        <label>Email</label><br />
-        <input type="email" id="email" required />
-      </p>
-      <p>
-        <label>Phone number</label><br />
-        <input type="tel" id="phone" />
-      </p>
-      <p>
-        <label>Country</label><br />
-        <select>
-          <option>China</option>
-          <option>India</option>
-          <option>United States</option>
-          <option>Indonesia</option>
-          <option>Brazil</option>
-        </select>
+        If you do not have one of the necessary items on the sign up sheet, we
+        will drop it off at the address you have listed. If you have all of your
+        materials, you are all set to create a mask! After completing your
+        homemade mask, you may either:
       </p>
 
+      <ol>
+        <li>
+          Send it back to us to sell, where all proceeds are funneled back into
+          our program if you are interested in this option, please visit our
+          donate page for the drop off details.
+        </li>
+        <li>Keep it and rock your new mask yourself!</li>
+      </ol>
+      <br />
+      <h3>Interested in volunteer credit?</h3>
       <p>
-  <a onclick="submit()" href="success.html"><button type="button" >Sign up</button></a>
-        <button type="reset">Reset form</button>
+        No problem! After completing your zoom training session, we will send you
+        a certificate of volunteer participation. If you need us to write a letter
+        for proof, contact one of our team members, and they will be happy to
+        write one.
       </p>
-    </form>
-    <script>
-      function submit(){
-      var messageName = document.getElementById("first_name").value;
-      var messageLastName = document.getElementById("last_name").value;
-      var email = document.getElementById("email").value;
-      var phone = document.getElementById("phone").value;
-      console.log("here");
-      localStorage.setItem("first_name", messageName);
-      localStorage.setItem("last_name", messageLastName);
-      localStorage.setItem("email", email);
-      localStorage.setItem("phone", phone);
-        }
-      </script>
-  </body>
+      <br />
+      <p><b>Thank you for your support!</b></p>
+    </body>
+    <div id="navbar2">
+      <ul>
+        <li>
+          <a href="https://instagram.com/earthware_events">
+            Instagram: @earthware_events
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/earthware_events">
+            Facebook: @earthware_events
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/earthware_events">
+            Twitter: @earthware_events
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </html>

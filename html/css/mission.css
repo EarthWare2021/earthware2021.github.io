@@ -22,8 +22,9 @@
   font-weight: bold;
   font-size: 115%;
 }
-.small-font {
-  font-size: 70%;
+.smallfont {
+  font-size: 115%;
+  font-style: italic;
 }
 #main {
   padding: 5% 5%;

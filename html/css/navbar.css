@@ -32,3 +32,38 @@
 #active {
   color: rgb(202, 194, 74);
 }
+#navbar2 {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(154, 163, 196);
+}
+#navbar2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 1000px;
+}
+#navbar2 li {
+  float: left;
+}
+#navbar2 li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  background-color: rgb(154, 163, 196);
+  text-transform: uppercase;
+  font-size = 80%
+}
+#navbar2 li a:hover {
+  background-color: rgb(17, 60, 216);
+}
+
+#active {
+  color: rgb(202, 194, 74);
+}
