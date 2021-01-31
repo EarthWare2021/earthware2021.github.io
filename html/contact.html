@@ -4,16 +4,17 @@
     <div id="navbar">
       <ul>
         <li><img src="images/logo.png" height="40" /></li>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="\index.html">Home</a></li>
         <li><a href="mission.html">Our Mission</a></li>
         <li>
           <a href="contact.html"><b>Contact</b></a>
         </li>
         <li><a class="navbar" href="volunteer.html">Volunteer</a></li>
         <li><a class="navbar" href="donate.html">Donate</a></li>
-       <li><a href="log_in.html">Log In</a></li>
+        <li><a href="log_in.html">Log In</a></li>
       </ul>
     </div>
+    <link rel= "stylesheet" href = "../index.css">
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <meta charset="UTF-8" />
@@ -34,20 +35,25 @@
     <body>
       <h1><b>CONTACT OUR TEAM</b><img src="images/logo.png" width="80" /></h1>
       <br />
+      <img src = "images/angie.jpeg" height = "150" />
       <h3>Angeline Plumb</h3>
       <ul>
         <li>Angeline.Plumb.code2021@nebulaacademy.org</li>
       </ul>
       <br />
+      <img src = "images/anthony.png" height = "150" />
       <h3>Anthony Ficalora</h3>
       <ul>
         <li>Anthony.Ficalora.code2021@nebulaacademy.org</li>
       </ul>
       <br />
+      <img src="images/ellie.png" height="150" />
       <h3>Ellie Shapiro</h3>
+
       <ul>
         <li>Ellie.Shapiro.code2021@nebulaacademy.org</li>
       </ul>
+
       <br />
       <h3>Chad Tyndale</h3>
       <ul>
@@ -58,13 +64,35 @@
       <p id="thanks"></p>
       <p>
         <label>Email</label><br />
-        <input type="email" name="name" />
+        <input type="email" id="name2" />
       </p>
       <p>
         <label>Message</label><br />
-        <input type="text" name="text" />
+        <input type="text" id="text" />
       </p>
-      <a href="thanks.html"><button">Submit</button></a>
+      <a onclick="submit2()" href="thanks.html">
+        <button id="button3" type="button">Submit</button></a>
+      </p>
+    </form>
+    <script>
+      function submit2(){
+      var messageName2 = document.getElementById("name2").value;
+      var text = document.getElementById("text").value;
+      localStorage.setItem("name2", messageName2);
+      localStorage.setItem("text", text);
+        }
+      </script>
+      <div id="navbar">
+        <ul>
+          <li><img src="images/logo.png" height="40" /></li>
+          <li><a hInstagram: @earthware</li>
+          <li>Facebook: @earthware</li>
+          <li>
+            Twitter: @earthware
+          </li>
+          
+        </ul>
+      </div>
     </body>
   </div>
 </html>
